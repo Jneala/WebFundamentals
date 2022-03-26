@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <meta name="description" content="Practice with HTML tags">
+</head>
+<body>
+  <h2>My Registration Form</h2>
+  <form action="submit" method="POST">
+    <p>Please Register</p>
+    <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name"><br>
+    <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name"><br>
+    <label for="email">Email</label>
+      <input type="text" id="email" name="email"><br>
+    <label for="password">Password</label>
+      <input type="password" id="password" name="password"><br>
+    <label for="password">Confirm Password</label>
+      <input type="password" id="confirm_password" name="password"><br>
+    <label for="birthday">Date of Birth</label>
+      <input type="date" name="birthday" id="birthday"><br>
+    
+    <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male">
+    <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female">
+    <label for="other">Other</label>
+      <input type="radio" name="gender" id="other" value="other">
+    <label for="decline">Decline</label>
+      <input type="radio" name="gender" id="decline" value="decline"><br>
+
+    <label for="about_yourself">A short description about yourself</label><br>
+    <textarea name="about_yourself" id="about_yourself" cols="35" rows="5"></textarea><br>
+
+    <label for="favorite_language">Your Favorite Language</label>
+    <select name="favorite_language" id="favorite_language">
+      <option value="C#">C#</option>
+      <option value="Python">Python</option>
+      <option value="MERN">MERN</option>
+    </select><br>
+
+    <input type="submit" value="Click here to register!">
+  </form>
+</body>
+</html>
