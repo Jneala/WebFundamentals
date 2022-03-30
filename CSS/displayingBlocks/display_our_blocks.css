@@ -1,8 +1,17 @@
+/* Optional catch all, to make standard starting point
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: top;
+} */
+
+
 #wrapper{
   width: 700px;
   height: 649px;
 } 
-  #header{  
+  #header{
   width: 700px;
   height: 95px;
   background-color: #d5d2ae;
