@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+body{
+  width: 970px;
+  min-height: 680px;
+  background-color: navy;
+}
+
+header{
+  width: 950px;
+  height: 60px;
+  background-color: red;
+  margin: 10px 10px 15px 10px;
+  padding: 13px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 15px;
+}
+#headerTitle{
+  color: lightgray;
+}
+
+#navBar{
+  width: 210px;
+  background-color: darkcyan;
+  margin: 6px 10px 10px 10px;
+  padding: 15px;
+  display: inline-block;
+  color: lightgray;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 15px;
+}
+a{
+  font-size: 14px;
+  color: aquamarine;
+}
+#outerLinks{
+  padding-left: 25px;
+}
+#innerLinks{
+  list-style-type: circle;
+  padding-left: 25px;
+}
+
+#main{
+  width: 710px;
+  height: 620px;
+  background-color: black;
+  padding: 20px 15px 15px 15px;
+  display: inline-block;
+  margin: 6px 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 15px;
+}
+#mainTitle{
+  color: lightgray;
+  margin-bottom: 5px;
+}
+#mainTopContent{
+  color: lightgray;
+  margin-bottom: 10px;
+}
+#mainBottomContent{
+  color: lightgray;
+  padding-left: 20px;
+}
+.difColorText{
+  color: royalblue;
+}
+
+footer{
+  width: 950px;
+  height: 50px;
+  background-color: gray;
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 15px;
+}
+footer p{
+  color: lightgray;
+}

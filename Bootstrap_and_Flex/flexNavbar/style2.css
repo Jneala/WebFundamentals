@@ -1,0 +1,46 @@
+/* This CSS reset can be slow in heavy sites because it applies to every element on the page. */
+*{
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+header{
+  width: 95%;
+  max-height: 80px;
+  background-color: skyblue;
+  display: flex;
+  align-items: center;
+}
+img{
+  max-width: 55px;
+  margin: 10px;
+}
+h1{
+  margin: 20px;
+  font-size: 15px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+}
+ul{
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+li{
+  display: inline;
+  font-family: Helvetica, sans-serif;
+  font-size: 11px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}

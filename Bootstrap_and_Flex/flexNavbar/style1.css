@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+header{
+  width: 95%;
+  min-height: 325px;
+  background-color: navy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+}
+
+#box{
+  width: 100px;
+  min-height: 100px;
+  background-color: blanchedalmond;
+}
