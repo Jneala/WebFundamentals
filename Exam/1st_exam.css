@@ -1,0 +1,206 @@
+*{
+  box-sizing: border-box;
+}
+#wrapper{
+  width: 1206px;
+  height: 1492px;
+}
+#header{
+  width: 1206px;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  margin-block-end: 0px;
+}
+  #header img{
+    width: 270px;
+    height: 80px;
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+  #header p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c5c3c1;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+    padding-right: 30px;
+  }
+#nav_bar_box{
+  width: 1206px;
+  height: 50px;
+  background-image: linear-gradient( #545454, #242424);
+  margin-block-start: 0px;
+}
+  #nav_bar_box ul{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+  #nav_bar_box ul li{
+    display: inline-block;
+    border-left-width: 2px;
+    border-left-style: solid;
+    padding: 7px;
+    margin: 10px;
+    margin-block-start: 0px;
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  #nav_bar_box ul li:first{
+    border-left: none;
+  }
+    #nav_bar_box ul li a{
+      color: #a09d99;
+      font-size: 20px;
+      text-decoration: none;
+      margin-block-start: 0px;
+    }
+#body_image{
+  width: 1206px;
+  height: 450px;
+}
+  #body_image img{
+    width: 1206px;
+    height: 450px;
+  }
+#body_options{
+  width: 1206px;
+  height: 208px;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#body_options a{
+  text-decoration: none;
+}
+  .body_options_header{
+    color: #db7b2b;
+    font-size: 25px;
+  }
+  #body_options p{
+    width: 180px;
+    color: #cad1d1;
+  }
+  #body_options img{
+    width: 3.5em;
+    padding-bottom: 90px;
+  }
+#buy_now_bar{
+  width: 1206px;
+  height: 180px;
+  background-color: #0b0b0b;
+  background: repeating-linear-gradient(135deg, #1a1a1a 4px, #1a1a1a 4px, 
+  #0b0b0b 4px, #1a1a1a 8px);
+  display: inline-block;
+}
+  #buy_now_bar_text{
+    width: 750px;
+    padding-left: 40px;
+    padding-top: 40px;
+    display: inline-block;
+
+  }
+  #buy_now_bar_header{
+    color: white;
+    font-size: 30px;
+    margin: 0px;
+  }
+  #buy_now_bar_main{
+    color: #c5c3c1;
+    margin-top: 10px;
+    display: inline-block;
+
+  }
+  #buy_now_bar button{
+    vertical-align: top;
+    margin: 60px 0px 0px 250px;
+      background: #f29b59;
+      background-image: -webkit-linear-gradient(top, #f29b59, #ef802e);
+      background-image: -moz-linear-gradient(top, #f29b59, #ef802e);
+      background-image: -ms-linear-gradient(top, #f29b59, #ef802e);
+      background-image: -o-linear-gradient(top, #f29b59, #ef802e);
+      background-image: linear-gradient(to bottom, #f29b59, #ef802e);
+      -webkit-border-radius: 6;
+      -moz-border-radius: 6;
+      border-radius: 6px;
+      border: 1px #1a1a1a;
+      font-family: Arial;
+      color: #fdeee2;
+      font-size: 21px;
+      padding: 11px 26px 11px 26px;
+      text-decoration: none;
+  }
+#portfolio_bar{
+  width: 1206px;
+  height: 90px;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+}
+  #portfolio_bar p{
+    color: white;
+    font-size: 23px;
+    margin: 30px 0px 0px 30px;
+  }
+  #portfolio_bar a{
+    font-size: 17px;
+    margin: 42px 10px 0px 0px;
+    color: #db7b2b;
+    text-decoration: none;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+#portfolio_main{
+  width: 1206px;
+  height: 330px;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.portfolio_main_boxes{
+  width: 260px;
+}
+.portfolio_main_boxes img{
+  width: 260px;
+  height: 170px;
+  border: 5px solid #44413e;
+}
+.portfolio_main_boxes a{
+  text-decoration: none;
+}
+.portfolio_main_boxes span{
+  color: #db7b2b;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-block-end: 15px;
+
+}
+.portfolio_main_boxes p{
+  font-size: 16px;
+  color: #c5c3c1;
+  margin-block-start: 10px;
+  margin-block-end: 15px;
+}
+#footer{
+  width: 1206px;
+  height: 15px;
+  background-color: #1a1a1a;
+}
+#footer p{
+  font-size: 13px;
+  color: #5d6060;
+  text-align: right;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+#footer a{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5d6060;
+  text-decoration: none;
+  margin-right: 40px;
+  vertical-align: bottom;
+}

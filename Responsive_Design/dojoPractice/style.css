@@ -1,0 +1,45 @@
+*{
+  margin: 15;
+  padding: 15;
+  vertical-align: top;
+  box-sizing: border-box;
+  outline: 1px dotted red;
+}
+.changeColor{
+  background-color: green;
+}
+.changeStyle{
+  background-color: green;
+}
+
+@media only screen and (max-width: 910px){
+  .changeColor {
+    background-color: red;
+  }
+  .changeStyle{
+    border-radius: 20%;
+  }
+}
+@media only screen and (max-width: 710px){
+  .changeColor {
+    background-color: blue;
+  }
+  .changeStyle{
+    border-radius: 35%;
+  }
+}
+@media only screen and (max-width: 510px){
+  .changeColor {
+    background-color: yellow;
+  }
+  .changeStyle{
+    border-radius: 50%;
+  }
+}
+
+#wrapper{
+  width: 90%;
+}
+#buttonsContainer{
+  width: 75%;
+}

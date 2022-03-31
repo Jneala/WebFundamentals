@@ -1,0 +1,102 @@
+#wrapper{
+  box-sizing: border-box;
+  width: 900px;
+  height: 600px;
+  background-color: lightgray;
+}
+.topLine{
+  width: 900px;
+  height: 33px;
+  border: 2px dotted blue;
+}
+#edge{
+  margin-left: 15px;
+}
+.topLine p{
+  width: 40px;
+  height: 33px;
+  margin-block-start: 2px;
+  margin-block-end: 2px;
+  margin: 2px;
+  margin-left: 2.25px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 13px;
+  color: red;
+}
+#GP{
+  font-size: 13px;
+}
+#middle_section{
+  width: 900px;
+  height: 450px;
+  display: flex;
+  border: 2px dotted black;
+}
+#group1to2{
+  width: 140px;
+  height: 450px;
+  border: 2px dotted red;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#group1to2 p{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-block-start: 2px;
+  margin-block-end: 2px;
+  margin: 2px;
+  background-color: rgb(121, 121, 245);
+  font-size: 12px;
+}
+#group1to2 p span{
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(77, 0, 150);
+}
+#group3to12{
+  width: 440px;
+  height: 450px;
+  border: 2px dotted blue;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#group3to12 p{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-block-start: 2px;
+  margin-block-end: 2px;
+  margin: 2px;
+  background-color: rgb(219, 135, 102);
+}
+#group13to18{
+  width: 264px;
+  height: 450px;
+  border: 2px dotted red;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#group13to18 p{
+  width: 40px;
+  height: 40px;
+  margin-block-start: 2px;
+  margin-block-end: 2px;
+  margin: 2px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgb(209, 206, 34);
+}
+#wrapper .empty{
+  background-color: transparent;
+  color: red;
+  font-size: 13px;
+}
