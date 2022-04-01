@@ -11,6 +11,9 @@
 .changeStyle{
   background-color: green;
 }
+.changeLayout{
+  background-color: green;
+}
 
 @media only screen and (max-width: 910px){
   .changeColor {
@@ -18,6 +21,9 @@
   }
   .changeStyle{
     border-radius: 20%;
+  }
+  .changeLayout, lg-1{
+    min-width: 100%;
   }
 }
 @media only screen and (max-width: 710px){
@@ -27,6 +33,9 @@
   .changeStyle{
     border-radius: 35%;
   }
+  .changeLayout, med-2{
+    min-width: 50%;
+  }
 }
 @media only screen and (max-width: 510px){
   .changeColor {
@@ -34,6 +43,9 @@
   }
   .changeStyle{
     border-radius: 50%;
+  }
+  .changeLayout, sm-4{
+    min-width: 25%;
   }
 }
 
