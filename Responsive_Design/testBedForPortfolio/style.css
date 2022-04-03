@@ -178,6 +178,21 @@
         background-color: #407d61;
         color: white;
       }
+@media only screen and (max-width: 925px){
+  .bottom_box, lg-1{
+    min-width: 100%;
+  }
+}
+@media only screen and (max-width: 725px){
+  .bottom_box med-2{
+    min-width: 50%;
+  }
+}
+@media only screen and (max-width: 525px){
+  .bottom_box, sm-4{
+    min-width: 25%;
+  }
+}
 
 #footer{
   background-image: linear-gradient(to top, #f1f1f1, #fefefe);
@@ -210,5 +225,5 @@ display: block;
 }
 #footer2 a{
 color: black;
-
 }
+
