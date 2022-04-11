@@ -4,3 +4,9 @@
   vertical-align: top;
   box-sizing: border-box;
 }
+
+#topBox {
+  width: 500px;
+  outline: dotted 2px red;
+  margin: 0 auto;
+}
