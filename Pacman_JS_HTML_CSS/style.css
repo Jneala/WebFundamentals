@@ -1,39 +1,46 @@
-/* *{
+*{
   margin: 0;
   padding: 0;
   vertical-align: top;
   box-sizing: border-box;
-} */
+}
 
 body {
   background-color: black;
 }
+#pacman {
+  background: url('images/pacman_icon.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+  margin-left: 3px;
+  margin-top: 3px;
+  position: absolute;
+}
+#score {
+  color: aliceblue;
+  border: dotted 2px red;
+  width: 350px;
+}
 
 div.row div {
-  width: 20px;
-  height: 20px;
-  border: solid 1px black;
+  width: 25px;
+  height: 25px;
   display: inline-block;
 }
-
 div.brick {
   background-color: blue;
+  /* width: 10px;
+  height: 10px; */
 }
-
 div.coin {
   background: url('images/dot.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 25%;
 }
-
-div.pacman {
-  background: url('images/pacman_icon.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70%;
-}
-
 div.empty {
   background: none;
 }
