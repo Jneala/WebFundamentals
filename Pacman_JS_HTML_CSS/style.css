@@ -1,6 +1,39 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
   vertical-align: top;
   box-sizing: border-box;
+} */
+
+body {
+  background-color: black;
+}
+
+div.row div {
+  width: 20px;
+  height: 20px;
+  border: solid 1px black;
+  display: inline-block;
+}
+
+div.brick {
+  background-color: blue;
+}
+
+div.coin {
+  background: url('images/dot.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+}
+
+div.pacman {
+  background: url('images/pacman_icon.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+div.empty {
+  background: none;
 }
