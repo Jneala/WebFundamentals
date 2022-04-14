@@ -10,8 +10,8 @@ body{
 }
 #container{
   background: url('images/background.jpg');
-  width:1000px;
-  height:550px;
+  width:800px;
+  height:450px;
 }
 #hero{
   background: url('images/1942.gif');
