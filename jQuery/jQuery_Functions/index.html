@@ -4,9 +4,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
   <link rel="stylesheet" href="style.css">
   <script>
     $(document).ready(function(){
+      $('#click').click(function(){
+        alert("You clicked the button! Good job! This click function was set to an event handler to show an alert displaying this text.");
+      });
+      $('#hideEl').click(function(){
+        $('.hide').hide();
+      });
+      $('#showEl').click(function(){
+        $('.show').show();
+      });
+      $('#toggle').click(function(){
+        $('.toggle').toggle();
+      });
+      $('#slideUp').click(function(){
+        $('.slideUp').slideUp();
+      });
+      $('#slideDown').click(function(){
+        $('.slideUp').slideDown();
+      });
+      $('#fadeOut').click(function(){
+        console.log("this jQuery function was opened")
+        $('.fadeOut').fadeOut(3000);
+      });
+      $('#fadeIn').click(function(){
+        console.log("this jQuery function was opened")
+        $('.fadeOut').fadeIn(3000);
+      });
+      $('#addClass').click(function(){
+        $('.addClass').addClass('turnWhite');
+      });
+      $('#removeClass').click(function(){
+        $('.addClass').removeClass('turnWhite');
+      });
+      $('#before').click(function(){
+        $('.before').before("<p>Before the header</p>");
+      });
+      $('#after').click(function(){
+        $('.after').after("<p>After the header</p>");
+      });
+      $('#append').click(function(){
+        $('.append').append("<p> See appended at the end.</p>");
+      });
+      $('#getHtml').click(function(){
+        console.log($('.getHtml').html());
+        alert("The HTML of this div tag will show in the Inspect Console");
+      });
+      $('#setHtml').click(function(){
+        $('.setHtml').html("Get the HTML contents of the first element in the set of matched elements or set the HTML contents of the element. <a href='#'>Into a totally different Link!</a>");
+      });
+      $('#attr').click(function(){
+        $('#attr').html("Prop");
+        $('.attr').html("Prop");
+        $('#box').prop("checked", false)
+        $('.changeP').html("Woogh! That was a tough!")
+        alert("Okay! I will use .html to change the heading and button, then use prop to change 'checked' from true to false! Much better!");
+      });
+      $('#val').click(function(){
+        $('#value').val("Good for forms!")
+      });
+      $('#text').click(function(){
+        console.log("this function was hit");
+        $('.text').text("New text with the push of a button!")
+      });
 
     });
   </script>
@@ -14,105 +77,111 @@
   <title>Basic jQuery Functions</title>
 </head>
 <body>
-  <header>
-    <h3 id="topHeader">Below are what I feel are the basic / common jQuery functions.</h3>
-    <p id="topParagraph">Play around and see what each one does!</p>
-  </header>
-  <div class="sections">
-    <h1 class="headings">Click</h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>
-  <div class="sections">
-    <h1 class="headings">Hide and Show</h1>
-    <button>Hide Element</button>
-    <button>Show Element</button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings">Toggle</h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
-  </div>  <div class="sections">
-    <h1 class="headings"></h1>
-    <button></button>
-    <p></p>
-    <hr>
+  <div id="wrapper">
+    <header>
+      <h2 id="topHeader">Below are what I feel are the basic / common jQuery functions.</h2>
+      <p id="topParagraph">Play around and see what each one does!</p>
+    </header>
+    <div class="sections">
+      <h1 class="headings">Click</h1>
+      <button id="click">Click</button>
+      <p>Bind an event handler to the “click” JavaScript event, or trigger that event on an element.</p>
+      <hr>
+    </div>
+    <div class="sections">
+      <h1 class="headings hide show">Hide and Show</h1>
+      <button id="hideEl">Hide Element</button>
+      <button id="showEl">Show Element</button>
+      <p>Hide and then Show the header above.</p>
+      <hr>
+    </div>  
+    <div class="sections">
+      <h1 class="headings toggle">Toggle</h1>
+      <button id="toggle">Toggle</button>
+      <p>Hide and then Show the header above, but with One button.</p>
+      <hr>
+    </div>  
+    <div class="sections">
+      <h1 class="headings slideUp">Slide Up</h1>
+      <button id="slideUp">Slide Up</button>
+      <p>Hide the header above with a sliding motion.</p>
+      <hr>
+    </div>
+    <div class="sections">
+      <h1 class="headings">Slide Down</h1>
+      <button id="slideDown">Slide Down</button>
+      <p>Display Slide Up with a sliding down motion. Move to the next button!</p>
+      <hr>
+    </div> 
+    <div class="sections">
+      <h1 class="headings slideDown">Slide Toggle</h1>
+      <button id="slideTog">Slide Toggle</button>
+      <p>Display or hide the matched elements with a sliding motion.</p>
+      <hr>
+    </div>
+    <div class="sections">
+      <h1 class="headings fadeOut">Fade Out</h1>
+      <button id="fadeOut">Fade Out</button>
+      <p>Hide Fade Out by fading them to transparent.</p>
+      <hr>
+    </div> 
+    <div class="sections">
+      <h1 class="headings fadeIn">Fade In</h1>
+      <button id="fadeIn">Fade In</button>
+      <p>Display Fade Out by fading them to opaque.</p>
+      <hr>
+    </div>  
+    <div class="sections">
+      <h1 class="headings addClass">Add/Remove Class</h1>
+      <button id="addClass">Add Class</button>
+      <button id="removeClass">Remove Class</button>
+      <p>Adds the specified class(es) to each element in the set of matched elements. Here the buttons will add a class used in my css to turn this heading white, then remove it.</p>
+      <hr>
+    </div>  
+    <div class="sections">
+      <h1 class="headings before">Before</h1>
+      <button id="before">Before</button>
+      <p>Insert content, specified by the parameter, before each element in the set of matched elements.</p>
+      <hr>
+    </div>  
+    <div class="sections">
+      <h1 class="headings after">After</h1><br>
+      <button id="after">After</button>
+      <p>Insert content, specified by the parameter, after each element in the set of matched elements.</p>
+      <hr>
+    </div>  
+    <div class="sections">
+      <h1 class="headings">Append</h1>
+      <button id="append">Append</button>
+      <p class="append">Insert content, specified by the parameter, to the end of each element specified. In this case, the p tag.</p>
+      <hr>
+    </div>  <div class="sections getHtml">
+      <h1 class="headings">HTML</h1>
+      <button id="getHtml">Get HTML</button>
+      <button id="setHtml">Set HTML</button>
+      <p class="setHtml">Get the HTML contents of the first element in the set of matched elements or set the HTML contents of the element. <a href="#">Change a Link</a></p>
+      <hr>
+    </div>  
+    <div class="sections">
+      <h1 class="headings attr">Attr</h1>
+      <button id="attr">Attr</button>
+      <input type="checkbox" name="box" id="box" checked>
+      <p class="changeP">Get the attributes of an element, or Set the attributes. Not sure what this is good for, prop seems a better option. Lets use prop to change the checkbox! Go ahead and click the button!</p>
+      <hr>
+    </div>  
+    <div class="sections">
+      <h1 class="headings">Value</h1>
+      <button id="val">Val</button>
+      <input type="text" name="val" id="value">
+      <p>Get the current value of the first element using an identifier such as id, class, tag etc, Or set the value of the element. Here, the button sets the input text box value.</p>
+      <hr>
+    </div>  
+    <div class="sections">
+      <h1 class="headings">Text</h1>
+      <button id="text">Text</button>
+      <p class="text">Get the combined text contents of each element in the set of matched elements, including their descendants as in ul, or set the text contents of the matched elements. Like using on click to change a p tag's text, but cannot change actual HTML like the .html function can.</p>
+      <hr>
   </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

@@ -4,3 +4,53 @@
   box-sizing: border-box;
   vertical-align: top;
 }
+
+hr {
+  width: 90%;
+  height: 1px;
+  margin: auto;
+  border-color: black;
+  background-color: black;
+}
+#wrapper{
+  width: 500px;
+  height: auto;
+  margin: auto;
+}
+
+header{
+  width: 100%;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+.sections{
+  background-color: cornflowerblue;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}
+.sections h1{
+  width: 100%;
+  margin: 10px;
+  display: inline-block;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sections button{
+  margin: 10px;
+  padding: 5px;
+  background-color: lightblue;
+  font-size: large;
+  display: inline-block;
+}
+.sections p{
+  width: 60%;
+  margin-bottom: 5px;
+  font-size: large;
+  display: inline-block;
+}
+.turnWhite{
+  color: white;
+}
