@@ -4,19 +4,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <script>
     $(document).ready(function(){
-
+      $('.img').click(function(){
+        $(this).fadeOut(1000);
+      });
+      $('.button').click(function(){
+        console.log("this function was hit");
+        $('.img').show();
+      });
     });
   </script>
 
   <title>Disappearing Ninja</title>
 </head>
 <body>
+  <div id="wrapper">
+    <h3>jQuery with Ninja Cats</h3>
+    <div id="ninjas">
+      <img src="ninja_copyCat.jpeg" alt="Copy Cat Ninja" class="img">
+      <img src="ninja_copyCat.jpeg" alt="Copy Cat Ninja" class="img">
+      <img src="ninja_copyCat.jpeg" alt="Copy Cat Ninja" class="img">
+      <img src="ninja_copyCat.jpeg" alt="Copy Cat Ninja" class="img">
+      <img src="ninja_copyCat.jpeg" alt="Copy Cat Ninja" class="img">
+      <img src="ninja_copyCat.jpeg" alt="Copy Cat Ninja" class="img">
+      <img src="ninja_copyCat.jpeg" alt="Copy Cat Ninja" class="img">
+      <img src="ninja_copyCat.jpeg" alt="Copy Cat Ninja" class="img">
+    </div>
+    <button class="button">Restore</button>
+  </div>
   
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
