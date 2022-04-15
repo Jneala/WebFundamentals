@@ -1,0 +1,1 @@
+//Script page for Disappearing Ninja
