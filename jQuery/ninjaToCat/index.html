@@ -15,6 +15,16 @@
   <img src="img/ninja3.png" data-alt-src="img/cat3.png">
   <img src="img/ninja4.png" data-alt-src="img/cat4.png">
 
-  <script type="text/javascript" src="script.js"></script>
+  <!-- <script type="text/javascript" src="script.js"></script> -->
+  <script>
+  $(document).ready(function(){
+  $('img').click(function(){
+    console.log("this function hit")
+    $(this).attr('placeholder', $(this).attr('src'));
+    $(this).attr('src', $(this).attr('data-alt-src'));
+    $(this).attr('data-alt-src', $(this).attr('placeholder'));
+  });
+});
+  </script>
 </body>
 </html>
