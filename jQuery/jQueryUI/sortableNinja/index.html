@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Sortable - Drop placeholder</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
+  html>body #sortable li { height: 1.5em; line-height: 1.2em; }
+  .ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable" ).sortable({
+      placeholder: "ui-state-highlight"
+    });
+    $( "#sortable" ).disableSelection();
+  } );
+  </script>
+  <title>Sorting Ninja w/ jQuery UI</title>
+</head>
+<body>
+  <div>
+    <h1>Working with jQuery UI!</h1>
+  </div>
+
+<ul id="sortable">
+  <li class="ui-state-default"><img src="images/sort1.png" alt="piece of ninja"></li>
+  <li class="ui-state-default"><img src="images/sort2.png" alt="piece of ninja"></li
+  <li class="ui-state-default"><img src="images/sort3.png" alt="piece of ninja"></li>
+  <li class="ui-state-default"><img src="images/sort4.png" alt="piece of ninja"></li>
+  <li class="ui-state-default"><img src="images/sort5.png" alt="piece of ninja"></li>
+</ul>
+
+
+</body>
+</html>

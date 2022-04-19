@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+h1{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+img{
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+}
+li.ui-state-default.ui-sortable-handle {
+  height: 50px !important;
+}
